@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="hi">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meesho Dhamaka - Online Shopping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="brand">MEESHO <span>DHAMAKA</span></div>
+  <input id="search" placeholder="Search products...">
+  <button onclick="searchProducts()">Search</button>
+  <div>🛒 Cart <b id="count">0</b></div>
+</header>
+<nav><a href="#home">Home</a><a href="#products">Products</a><a href="#clothes">Clothes</a><a href="#shoes">Shoes</a></nav>
+<section id="home" class="hero">
+  <h1>Meesho Dhamaka Offers</h1>
+  <p>Clothes, shoes and more at exciting prices.</p>
+  <button onclick="document.getElementById('products').scrollIntoView()">Shop Now</button>
+</section>
+<section class="section" id="products"><h2>All Products</h2><div id="grid" class="grid"></div></section>
+<section class="cartbox"><h2>Your Cart</h2><div id="cart"></div>
+<div class="checkout"><h3>Checkout</h3><p>🚫 Cash on Delivery: Not available</p><p>💳 Payment: Online payment only</p>
+<button onclick="pay()">Proceed to Online Payment</button></div></section>
+<footer>© 2026 Meesho Dhamaka · Independent online store · Contact: YOUR_NUMBER</footer>
+<script src="script.js"></script>
+</body></html>
